@@ -11,7 +11,7 @@ class V2rayCore < Formula
     etc.install "config.json"
   end
 
-  plist_options :manual => "v2ray -config=#{HOMEBREW_PREFIX}/etc/config.json"
+  plist_options :manual => "v2ray -config=#{HOMEBREW_PREFIX}/etc/v2ray-core/config.json"
 
   def plist; <<-EOS.undent
   <?xml version="1.0" encoding="UTF-8"?>
@@ -26,7 +26,7 @@ class V2rayCore < Formula
       <array>
         <string>#{bin}/v2ray</string>
         <string>-config</string>
-        <string>#{etc}/config.json</string>
+        <string>#{etc}/v2ray-core/config.json</string>
       </array>
       <key>RunAtLoad</key>
       <true/>
