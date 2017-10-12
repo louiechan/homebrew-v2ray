@@ -2,7 +2,7 @@ class V2rayCore < Formula
   desc "A platform for building proxies to bypass network restrictions."
   homepage "https://www.v2ray.com/"
   url "https://github.com/v2ray/v2ray-core/releases/download/v2.40/v2ray-macos.zip"
-  version "v2.40"
+  version "2.40"
   sha256 "06172d499a5e7ce752fae05d5cbdbed86f506c0c15af0d215cfd6e9a942b9115"
 
   def install
